@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Utensils, Truck, Sprout, CreditCard, Monitor, 
-  MapPin, CheckCircle2, ArrowRight, ArrowLeft 
+  MapPin, CheckCircle2, ArrowLeft 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
