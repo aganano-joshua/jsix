@@ -196,9 +196,11 @@ export default function Hero() {
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                             >
-                                <Button className="w-full bg-[#ff5e00] hover:bg-[#ff5e00]/90 text-white rounded-full py-7 text-xl font-bold shadow-xl transition-all cursor-pointer">
-                                    Order Now
-                                </Button>
+                                <a href="/get-started">
+                                    <Button className="w-full bg-[#ff5e00] hover:bg-[#ff5e00]/90 text-white rounded-full py-7 text-xl font-bold shadow-xl transition-all cursor-pointer">
+                                        Order Now
+                                    </Button>
+                                </a>
                             </motion.div>
                         </div>
                     </motion.div>

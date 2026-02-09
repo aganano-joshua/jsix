@@ -123,9 +123,11 @@ const Header = () => {
 
                 {/* Desktop Button */}
                 <div className="hidden md:flex items-center">
-                    <Button className="rounded-2xl border-[#ff5e00] text-[#ff5e00] hover:bg-[#ff5e00] hover:text-white" variant="outline">
-                        Get Started
-                    </Button>
+                    <Link to="/get-started">
+                        <Button className="rounded-2xl border-[#ff5e00] text-[#ff5e00] hover:bg-[#ff5e00] hover:text-white" variant="outline">
+                            Get Started
+                        </Button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Toggle */}
@@ -197,9 +199,11 @@ const Header = () => {
                             </Link>
                             
                             <div className="pt-4">
-                                <Button className="w-full rounded-xl bg-[#ff5e00] text-white hover:bg-[#ff5e00]/90 py-6 text-lg">
-                                    Get Started
-                                </Button>
+                                <Link to="/get-started" onClick={() => setIsOpen(false)}>
+                                    <Button className="w-full rounded-xl bg-[#ff5e00] text-white hover:bg-[#ff5e00]/90 py-6 text-lg">
+                                        Get Started
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </motion.div>

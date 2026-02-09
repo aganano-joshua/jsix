@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Globe, Map, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -22,6 +22,19 @@ const tabs = [
 
 export default function GeneralOverview() {
     const [activeTab, setActiveTab] = useState("vision");
+
+    // Auto-loop tabs
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setActiveTab(prev => {
+                const currentIndex = tabs.findIndex(t => t.id === prev);
+                const nextIndex = (currentIndex + 1) % tabs.length;
+                return tabs[nextIndex].id;
+            });
+        }, 5000); // Switch every 5 seconds
+
+        return () => clearInterval(timer);
+    }, [activeTab]); // Reset timer on interaction
 
     return (
         <section className="py-20 bg-background relative overflow-hidden">

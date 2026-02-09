@@ -3,6 +3,7 @@ import Header from './components/shared/Header'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import GetStarted from './pages/GetStarted'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/get-started" element={<GetStarted />} />
           <Route path="*" element={<div className="container py-8">404 — Not Found</div>} />
         </Routes>
       </main>

@@ -2,6 +2,7 @@ import Hero from "@/components/modules/home/Hero";
 import Trusted from "@/components/modules/trusted/trusted";
 import About from "@/components/modules/about-us/about";
 import GeneralOverview from "@/components/modules/overview/GeneralOverview";
+import Footer from "@/components/modules/footer/Footer";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             </div>
             <GeneralOverview />
             <About />
+            <Footer />
         </div>
     )
 }
